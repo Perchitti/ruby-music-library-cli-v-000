@@ -24,6 +24,7 @@ class Genre
 
   def save
     self.class.all << self #self.class.all is the same as @@all
+    binding.pry
   end
 
   def self.create(name)

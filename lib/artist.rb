@@ -53,7 +53,7 @@ class Artist
   end
 
   def genres
-    songs.collect {|song| song.genre }.uniq
+    songs.collect {|song| song.genre }.uniq #uniq does not return duplicates
         # returns a collection of genres for all of the artist's songs
         # => (artist has many genres through songs)
         # does not return duplicate genres if the artist has more than one song of a particular genre
